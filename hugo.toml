@@ -3,6 +3,9 @@ languageCode = 'zh-tw'
 title = '程式猿 AFA 的隨手筆記'
 theme = "PaperMod"
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 [taxonomies]
   category = "categories"
   tag = "tags"
@@ -10,6 +13,7 @@ theme = "PaperMod"
 [params]
   # 基本顯示設定
   defaultTheme = "auto"
+  search = true
   ShowReadingTime = true
   ShowShareButtons = false
   ShowPostNavLinks = true
@@ -20,11 +24,14 @@ theme = "PaperMod"
 
   [params.label]
     text = "appfromape"
-    icon = "/images/appfromape.png"  # 對應剛剛放的路徑
-    iconHeight = 35                # 可自己調整高度
+    # 對應剛剛放的路徑
+    icon = "/images/appfromape.png"
+    # 可自己調整高度
+    iconHeight = 35
 
   [params.assets]
-    favicon = "/images/favicon.ico"             # 如果你另外做了 favicon.ico 
+    # 如果你另外做了 favicon.ico
+    favicon = "/images/favicon.ico"
   
   # 首頁上方資訊卡（Home Info）
   [params.homeInfoParams]
@@ -54,6 +61,14 @@ theme = "PaperMod"
      name = "Threads"
      url  = "https://www.threads.com/@appfromape"
 
+[params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 100
+  threshold = 0.3
+  minMatchCharLength = 2
+
 [menu]
   [[menu.main]]
     name = "最新文章"
@@ -79,3 +94,9 @@ theme = "PaperMod"
     name = "關於我"
     url = "/about/"
     weight = 5
+
+  [[menu.main]]
+    identifier = "search"
+    name = "搜尋"
+    url = "/search/"
+    weight = 6

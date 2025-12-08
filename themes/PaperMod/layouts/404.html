@@ -1,3 +1,61 @@
 {{- define "main" }}
 <div class="not-found">404</div>
+<div class="not-found-text">
+    Oops! 找不到這個頁面。
+</div>
+<div class="not-found-search">
+    <a href="/search/" class="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        搜尋文章
+    </a>
+    <a href="/" class="button secondary">回首頁</a>
+</div>
+
+<style>
+    .not-found-text {
+        text-align: center;
+        font-size: 1.5rem;
+        color: var(--secondary);
+        margin-bottom: 2rem;
+    }
+
+    .not-found-search {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .button {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 0.8rem 1.5rem;
+        background: var(--entry);
+        border: 1px solid var(--border);
+        border-radius: 99px;
+        color: var(--primary);
+        font-weight: 600;
+        transition: all 0.2s ease;
+    }
+
+    .button:hover {
+        background: var(--afa-accent);
+        color: white;
+        border-color: var(--afa-accent);
+        transform: translateY(-2px);
+    }
+
+    .button.secondary {
+        background: transparent;
+    }
+
+    .button.secondary:hover {
+        background: var(--entry);
+        color: var(--afa-accent);
+    }
+</style>
 {{- end }}{{/* end main */ -}}
