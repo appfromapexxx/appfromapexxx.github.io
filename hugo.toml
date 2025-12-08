@@ -37,13 +37,12 @@ theme = "PaperMod"
   [params.homeInfoParams]
     Title = "程式猿 AFA 的隨手筆記"
     Content = """
-這裡是 appfromape 程式猿的隨手筆記。
-
-主題圍繞：
-• AI 工具實戰與工作流
-• Vibe Coding 開發實驗
-• Apple 生態系（Mac / iPad / iPhone）
-• YouTube 創作者的實務筆記
+這裡是 appfromape 程式猿的隨手筆記。  
+主題圍繞：  
+- • AI 工具實戰與工作流  
+- • Vibe Coding 開發實驗  
+- • Apple 生態系（Mac / iPad / iPhone）  
+- • YouTube 創作者的實務筆記
 """
 
   # 社群連結（圖示會出現在首頁資訊卡下方）
@@ -76,27 +75,39 @@ theme = "PaperMod"
     weight = 1
 
   [[menu.main]]
+    identifier = "categories"
+    name = "分類"
+    url = "/categories/"
+    weight = 10
+
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tag"
+    url = "/tags/"
+    weight = 20
+
+  [[menu.main]]
     name = "AI 工具"
     url = "/tags/ai-工具/"
-    weight = 2
+    weight = 30
 
   [[menu.main]]
     name = "Vibe Coding"
     url = "/tags/vibe-coding/"
-    weight = 3
+    weight = 40
 
   [[menu.main]]
     name = "Apple 生態系"
     url = "/tags/apple-生態系/"
-    weight = 4
+    weight = 50
 
   [[menu.main]]
     name = "關於我"
     url = "/about/"
-    weight = 5
+    weight = 60
 
   [[menu.main]]
     identifier = "search"
     name = "搜尋"
     url = "/search/"
-    weight = 6
+    weight = 70
