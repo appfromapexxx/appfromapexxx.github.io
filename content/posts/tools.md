@@ -15,3 +15,4 @@ tocOpen: true
 
 ## Google 開源的圖片壓縮網頁工具
 
+[Squoosh](https://squoosh.appfromape.com) 是一個由 Google Chrome Labs 團隊開發的圖片壓縮與最佳化工具。
